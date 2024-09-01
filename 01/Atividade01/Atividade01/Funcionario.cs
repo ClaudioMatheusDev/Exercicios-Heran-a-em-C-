@@ -9,13 +9,15 @@ namespace Atividade01
     internal class Funcionario
     {
 
-        public string Nome {  get; set; }
+        public string Nome { get; set; }
         public double Salario { get; set; }
 
 
-        public Funcionario() { }
+        public Funcionario()
+        {
+        }
 
-        public Funcionario(string nome, int salario)
+        public Funcionario(string nome, double salario)
         {
             Nome = nome;
             Salario = salario;
@@ -25,7 +27,7 @@ namespace Atividade01
         public void addAumento(double valor)
         {
             Salario += valor;
-       }
+        }
 
         public virtual double GanhoAnual()
         {
@@ -36,7 +38,7 @@ namespace Atividade01
         {
             Console.WriteLine($"Nome: {Nome}");
             Console.WriteLine($"Salario: {Salario}");
-        } 
+        }
 
 
     }
